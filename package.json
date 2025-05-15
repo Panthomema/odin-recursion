@@ -1,0 +1,24 @@
+{
+  "name": "odin-recursion",
+  "version": "1.0.0",
+  "main": "fib.js",
+  "scripts": {
+    "compile": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Panthomema/odin-recursion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Panthomema/odin-recursion/issues"
+  },
+  "homepage": "https://github.com/Panthomema/odin-recursion#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "typescript": "^5.8.3"
+  }
+}
