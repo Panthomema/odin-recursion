@@ -19,7 +19,7 @@ typescript for learning purposes.
 
 3. Run typescript compiler with `npm run compile` or `npx tsc`
 
-4. Execute the scripts with `node dist/fib.js` and `node mergeSort.js`
+4. Execute the scripts with `node dist/fib.js` and `node dist/mergeSort.js`
 
 ## License
 
