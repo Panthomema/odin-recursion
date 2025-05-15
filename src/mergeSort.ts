@@ -1,4 +1,4 @@
-function mergeSort(arr) {
+function mergeSort(arr: number[]) : number[] {
   // Base case
   if (arr.length <= 1) return arr;
 
@@ -9,12 +9,12 @@ function mergeSort(arr) {
   return merge(leftArr, rightArr);
 }
 
-function merge(leftArr, rightArr) {
+function merge(leftArr: number[], rightArr: number[]) : number[] {
   const mergedArr = [];
 
   while (leftArr.length > 0 && rightArr.length > 0) {
     const arrWithMin = leftArr[0] <= rightArr[0] ? leftArr : rightArr;
-    mergedArr.push(arrWithMin.shift());
+    mergedArr.push(arrWithMin.shift()!); // ! = not null/undefined assertion
   }
   return mergedArr.concat(leftArr, rightArr);
 }

@@ -1,11 +1,11 @@
 // Iterative approach
-function fibs(num) {
+function fibs(num: number) : number[] {
   const seq = [0, 1];
 
   if (num < 2) return seq.slice(0, num);
 
   while (num > 2) {
-    seq.push(seq.at(-1) + seq.at(-2));
+    seq.push(seq.at(-1)! + seq.at(-2)!); // ! = not null/undefined assertion
     num--;
   }
 
@@ -13,10 +13,10 @@ function fibs(num) {
 }
 
 // Recursive approach
-function fibsRec(num, seq = [0, 1]) {
+function fibsRec(num: number, seq = [0, 1]) : number[] {
   if (seq.length >= num) return seq.slice(0, num);
 
-  const newNum = seq.at(-1) + seq.at(-2);
+  const newNum = seq.at(-1)! + seq.at(-2)!; // ! = not null/undefined assertion
   seq.push(newNum);
 
   return fibsRec(num, seq);
