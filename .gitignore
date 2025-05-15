@@ -1,0 +1,25 @@
+# Node dependencies
+node_modules/
+
+# Compiled output
+dist/
+
+# Optional: If you're using ts-node and generating cache
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Optional: Env files
+.env
+.env.*
